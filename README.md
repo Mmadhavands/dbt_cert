@@ -1,11 +1,15 @@
-This is a Student Repository for the Udemy's Complete dbt Bootcamp. You can:
+Welcome to your new dbt project!
 
-1) Either start a codespace and start using dbt right away
-2) Or clone this repo with Visual Studio Code and follow the instructions to set up a local dbt environment.
+### Using the starter project
 
-Codespace setup:
-<img width="930" height="435" alt="image" src="https://github.com/user-attachments/assets/d7e15ad5-6df6-4651-895a-ea382c4da79c" />
+Try running the following commands:
+- dbt run
+- dbt test
 
-_Note: You don't need to create/activate a virtualenv in the Codespace. Everything has been set up for you._
 
-Have fun! :)  
+### Resources:
+- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
+- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
+- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
+- Find [dbt events](https://events.getdbt.com) near you
+- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
