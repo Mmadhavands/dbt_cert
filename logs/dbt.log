@@ -26,3 +26,165 @@ Happy modeling!
 [0m22:31:20.199151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d836780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d813650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d68f8a0>]}
 [0m22:31:20.199344 [debug] [MainThread]: Flushing usage events
 [0m22:31:21.210550 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:57:54.618131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2acad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b6674d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b667750>]}
+
+
+============================== 22:57:54.620853 | 22ccf8c0-0f21-4ab3-a7f9-aef0e6393669 ==============================
+[0m22:57:54.620853 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:57:54.621104 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'quiet': 'False', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_path': '/Users/madhavanmurugan/Documents/Learning/dbt_cert/logs', 'printer_width': '80', 'write_json': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'debug': 'False', 'log_format': 'default', 'hints_enabled': 'True', 'log_cache_events': 'False', 'version_check': 'True', 'no_print': 'None', 'indirect_selection': 'eager', 'empty': 'None', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/madhavanmurugan/Documents/Learning/dbt_cert', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False'}
+[0m22:57:54.631058 [info ] [MainThread]: dbt version: 1.12.5
+[0m22:57:54.631250 [info ] [MainThread]: python version: 3.13.1
+[0m22:57:54.631362 [info ] [MainThread]: python path: /Users/madhavanmurugan/Documents/venv/dbt_venv/bin/python
+[0m22:57:54.631457 [info ] [MainThread]: os info: macOS-26.6.2-arm64-arm-64bit-Mach-O
+[0m22:57:54.935395 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:57:54.935623 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:57:54.935734 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:57:54.996508 [info ] [MainThread]: Using profiles dir at /Users/madhavanmurugan/Documents/Learning/dbt_cert
+[0m22:57:54.996709 [info ] [MainThread]: Using profiles.yml file at /Users/madhavanmurugan/Documents/Learning/dbt_cert/profiles.yml
+[0m22:57:54.996831 [info ] [MainThread]: Using dbt_project.yml file at /Users/madhavanmurugan/Documents/Learning/dbt_cert/dbt_project.yml
+[0m22:57:54.997217 [info ] [MainThread]: adapter type: snowflake
+[0m22:57:54.997357 [info ] [MainThread]: adapter version: 1.12.1
+[0m22:57:55.034071 [info ] [MainThread]: Configuration:
+[0m22:57:55.034281 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:57:55.034399 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:57:55.034498 [info ] [MainThread]: Required dependencies:
+[0m22:57:55.034668 [debug] [MainThread]: Executing "git --help"
+[0m22:57:55.050889 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:57:55.051311 [debug] [MainThread]: STDERR: "b''"
+[0m22:57:55.051444 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:57:55.051556 [info ] [MainThread]: Connection:
+[0m22:57:55.051692 [info ] [MainThread]:   account: JQKARHF-DU24978
+[0m22:57:55.051782 [info ] [MainThread]:   user: dbt
+[0m22:57:55.051869 [info ] [MainThread]:   database: AIRBNB
+[0m22:57:55.051955 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m22:57:55.052039 [info ] [MainThread]:   role: TRANSFORM
+[0m22:57:55.052121 [info ] [MainThread]:   schema: DEV
+[0m22:57:55.052203 [info ] [MainThread]:   authenticator: None
+[0m22:57:55.052289 [info ] [MainThread]:   oauth_client_id: None
+[0m22:57:55.052372 [info ] [MainThread]:   query_tag: None
+[0m22:57:55.052456 [info ] [MainThread]:   client_session_keep_alive: False
+[0m22:57:55.052542 [info ] [MainThread]:   host: None
+[0m22:57:55.052626 [info ] [MainThread]:   port: None
+[0m22:57:55.052708 [info ] [MainThread]:   proxy_host: None
+[0m22:57:55.052791 [info ] [MainThread]:   proxy_port: None
+[0m22:57:55.052875 [info ] [MainThread]:   protocol: None
+[0m22:57:55.052956 [info ] [MainThread]:   connect_retries: 1
+[0m22:57:55.053038 [info ] [MainThread]:   connect_timeout: None
+[0m22:57:55.053119 [info ] [MainThread]:   retry_on_database_errors: False
+[0m22:57:55.053201 [info ] [MainThread]:   retry_all: False
+[0m22:57:55.053283 [info ] [MainThread]:   insecure_mode: False
+[0m22:57:55.053362 [info ] [MainThread]:   reuse_connections: True
+[0m22:57:55.053444 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m22:57:55.053528 [info ] [MainThread]:   workload_identity_provider: None
+[0m22:57:55.053609 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m22:57:55.053691 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m22:57:55.053948 [info ] [MainThread]: Registered adapter: snowflake=1.12.1
+[0m22:57:55.101315 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:57:55.102674 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:57:55.102817 [debug] [MainThread]: On debug: select 1 as id
+[0m22:57:55.102918 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:57:56.391131 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.288 seconds
+[0m22:57:56.393683 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:57:56.394569 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:57:56.402230 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.8218006, "process_in_blocks": "0", "process_kernel_time": 0.220575, "process_mem_max_rss": "181370880", "process_out_blocks": "0", "process_user_time": 0.871066}
+[0m22:57:56.403049 [debug] [MainThread]: Command `dbt debug` succeeded at 22:57:56.402887 after 1.82 seconds
+[0m22:57:56.403545 [debug] [MainThread]: Connection 'debug' was left open.
+[0m22:57:56.403899 [debug] [MainThread]: On debug: Close
+[0m22:57:56.718886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e4fcc30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e583e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10efa0380>]}
+[0m22:57:56.720241 [debug] [MainThread]: Flushing usage events
+[0m22:57:57.735766 [debug] [MainThread]: An error was encountered while trying to flush usage events
+{"data":{"log_version":3,"version":"=2.0.8"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"info","msg":"Running with dbt=2.0.8","name":"MainReportVersion","pid":27559,"thread":"tokio-rt-worker","ts":"2026-10-11T17:28:33.248958Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"/Users/madhavanmurugan/.local/bin/dbt debug --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"debug","msg":"running dbt with arguments {\"command\":\"debug\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":27559,"thread":"tokio-rt-worker","ts":"2026-10-11T17:28:33.249442Z"}}
+{"data":{"msg":"dbt 2.0.8"},"info":{"category":"","code":"","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"info","msg":"dbt 2.0.8","name":"Generic","pid":27559,"thread":"tokio-rt-worker","ts":"2026-10-11T17:28:33.252255Z"}}
+{"data":{"msg":"Loading profiles.yml"},"info":{"category":"","code":"","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"info","msg":"Loading profiles.yml","name":"Generic","pid":27559,"thread":"tokio-rt-worker","ts":"2026-10-11T17:28:33.272077Z"}}
+{"data":{"msg":"Debugging profile: dev"},"info":{"category":"","code":"Z047","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"info","msg":"Debugging profile: dev","name":"DebugCmdOut","pid":27559,"thread":"tokio-rt-worker","ts":"2026-10-11T17:28:33.282185Z"}}
+{"data":{"msg":"Debugging dbt version: 2.0.8"},"info":{"category":"","code":"Z047","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"info","msg":"Debugging dbt version: 2.0.8","name":"DebugCmdOut","pid":27559,"thread":"tokio-rt-worker","ts":"2026-10-11T17:28:33.282199Z"}}
+{"data":{"msg":"Debugging platform: macos aarch64 (unix)"},"info":{"category":"","code":"Z047","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"info","msg":"Debugging platform: macos aarch64 (unix)","name":"DebugCmdOut","pid":27559,"thread":"tokio-rt-worker","ts":"2026-10-11T17:28:33.282496Z"}}
+{"data":{"msg":"Debugging adapter type: snowflake (remote)"},"info":{"category":"","code":"Z047","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"info","msg":"Debugging adapter type: snowflake (remote)","name":"DebugCmdOut","pid":27559,"thread":"tokio-rt-worker","ts":"2026-10-11T17:28:33.282866Z"}}
+{"data":{"msg":"Debugging dependencies:\n  git: OK"},"info":{"category":"","code":"Z047","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"info","msg":"Debugging dependencies:\n  git: OK","name":"DebugCmdOut","pid":27559,"thread":"tokio-rt-worker","ts":"2026-10-11T17:28:33.295124Z"}}
+{"data":{"msg":"Debugging connection:\n  \"account\": \"JQKARHF-DU24978\",\n  \"user\": \"dbt\",\n  \"database\": \"AIRBNB\",\n  \"warehouse\": \"COMPUTE_WH\",\n  \"schema\": \"DEV\",\n  \"role\": \"TRANSFORM\""},"info":{"category":"","code":"Z047","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"info","msg":"Debugging connection:\n  \"account\": \"JQKARHF-DU24978\",\n  \"user\": \"dbt\",\n  \"database\": \"AIRBNB\",\n  \"warehouse\": \"COMPUTE_WH\",\n  \"schema\": \"DEV\",\n  \"role\": \"TRANSFORM\"","name":"DebugCmdOut","pid":27559,"thread":"tokio-rt-worker","ts":"2026-10-11T17:28:33.296906Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"debug","msg":"Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.18","name":"Generic","pid":27559,"thread":"dbt-blocking-worker","ts":"2026-10-11T17:28:33.304613Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"debug","msg":"borrow_tlocal_connection() took 3.653007666s","name":"Generic","pid":27559,"thread":"dbt-blocking-worker","ts":"2026-10-11T17:28:36.955126Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"debug","msg":"create_debug_span(...).entered() took 1.160792ms","name":"Generic","pid":27559,"thread":"dbt-blocking-worker","ts":"2026-10-11T17:28:36.960656Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"debug","msg":"stmt.execute() (submit+wait_for_completion, returns reader) took 155.635042ms","name":"Generic","pid":27559,"thread":"dbt-blocking-worker","ts":"2026-10-11T17:28:37.116560Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"debug","msg":"reader.schema() took 584ns","name":"Generic","pid":27559,"thread":"dbt-blocking-worker","ts":"2026-10-11T17:28:37.116612Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"debug","msg":"do_execute(conn) (closure: stmt.execute + schema + batch loop) took 158.79275ms","name":"Generic","pid":27559,"thread":"dbt-blocking-worker","ts":"2026-10-11T17:28:37.119511Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"debug","msg":"concat_batches + normalize_result_column_names took 2.313458ms","name":"Generic","pid":27559,"thread":"dbt-blocking-worker","ts":"2026-10-11T17:28:37.121879Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"debug","msg":"record_current_span_status_from_attrs took 298.667µs","name":"Generic","pid":27559,"thread":"dbt-blocking-worker","ts":"2026-10-11T17:28:37.122218Z"}}
+{"data":{"sql":"select 1 as id"},"info":{"category":"","code":"E017","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"debug","msg":"-- created_at: 2026-10-11T17:28:36.959884+00:00\n-- finished_at: 2026-10-11T17:28:37.122489+00:00\n-- elapsed: 162ms\n-- outcome: success\n-- dialect: snowflake\n-- node_id: not available\n-- query_id: 01c7a9b8-000e-1001-0002-937e00069006\n-- desc: not provided\nselect 1 as id;\n","name":"SQLQuery","pid":27559,"thread":"dbt-blocking-worker","ts":"2026-10-11T17:28:37.122502Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"debug","msg":"drop(query_span_guard) (span exit/export) took 515.542µs","name":"Generic","pid":27559,"thread":"dbt-blocking-worker","ts":"2026-10-11T17:28:37.122763Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"debug","msg":"adapter.execute() (full call, incl. adbc_execute_with_options) took 170.13875ms","name":"Generic","pid":27559,"thread":"dbt-blocking-worker","ts":"2026-10-11T17:28:37.125320Z"}}
+{"data":{"msg":"Debugging connection test: OK (3.8s)"},"info":{"category":"","code":"Z047","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"info","msg":"Debugging connection test: OK (3.8s)","name":"DebugCmdOut","pid":27559,"thread":"dbt-blocking-worker","ts":"2026-10-11T17:28:37.125755Z"}}
+{"data":{"msg":"Debugged All checks passed!"},"info":{"category":"","code":"Z048","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"info","msg":"Debugged All checks passed!","name":"DebugCmdResult","pid":27559,"thread":"tokio-rt-worker","ts":"2026-10-11T17:28:37.126950Z"}}
+{"data":{"completed_at":"2026-10-11T17:28:37.286872Z","elapsed":4.04003381729126,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a12c02-56d2-7d82-a34e-240358be2fd8","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'debug' successfully for target 'dev' [4.0s]","name":"CommandCompleted","pid":27559,"thread":"tokio-rt-worker","ts":"2026-10-11T17:28:37.287188Z"}}
+[0m22:59:31.254662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac10ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bfd34d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bfd3750>]}
+
+
+============================== 22:59:31.256970 | f6e8d44a-aab3-44c2-92e9-6753a613d0e8 ==============================
+[0m22:59:31.256970 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:59:31.257223 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'warn_error': 'None', 'empty': 'None', 'hints_enabled': 'True', 'log_path': '/Users/madhavanmurugan/Documents/Learning/dbt_cert/logs', 'printer_width': '80', 'no_print': 'None', 'version_check': 'True', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'log_format': 'default', 'static_parser': 'True', 'profiles_dir': '/Users/madhavanmurugan/Documents/Learning/dbt_cert', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'debug': 'False', 'invocation_command': 'dbt debug'}
+[0m22:59:31.265025 [info ] [MainThread]: dbt version: 1.12.5
+[0m22:59:31.265248 [info ] [MainThread]: python version: 3.13.1
+[0m22:59:31.265375 [info ] [MainThread]: python path: /Users/madhavanmurugan/Documents/venv/dbt_venv/bin/python
+[0m22:59:31.265475 [info ] [MainThread]: os info: macOS-26.6.2-arm64-arm-64bit-Mach-O
+[0m22:59:31.452804 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:59:31.453019 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:59:31.453131 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:59:31.499176 [info ] [MainThread]: Using profiles dir at /Users/madhavanmurugan/Documents/Learning/dbt_cert
+[0m22:59:31.499383 [info ] [MainThread]: Using profiles.yml file at /Users/madhavanmurugan/Documents/Learning/dbt_cert/profiles.yml
+[0m22:59:31.499505 [info ] [MainThread]: Using dbt_project.yml file at /Users/madhavanmurugan/Documents/Learning/dbt_cert/dbt_project.yml
+[0m22:59:31.499874 [info ] [MainThread]: adapter type: snowflake
+[0m22:59:31.500009 [info ] [MainThread]: adapter version: 1.12.1
+[0m22:59:31.536589 [info ] [MainThread]: Configuration:
+[0m22:59:31.536800 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:59:31.536915 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:59:31.537013 [info ] [MainThread]: Required dependencies:
+[0m22:59:31.537169 [debug] [MainThread]: Executing "git --help"
+[0m22:59:31.551645 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:59:31.552085 [debug] [MainThread]: STDERR: "b''"
+[0m22:59:31.552242 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:59:31.552366 [info ] [MainThread]: Connection:
+[0m22:59:31.552507 [info ] [MainThread]:   account: JQKARHF-DU24978
+[0m22:59:31.552607 [info ] [MainThread]:   user: dbt
+[0m22:59:31.552700 [info ] [MainThread]:   database: AIRBNB
+[0m22:59:31.552791 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m22:59:31.552881 [info ] [MainThread]:   role: TRANSFORM
+[0m22:59:31.552965 [info ] [MainThread]:   schema: DEV
+[0m22:59:31.553054 [info ] [MainThread]:   authenticator: None
+[0m22:59:31.553138 [info ] [MainThread]:   oauth_client_id: None
+[0m22:59:31.553223 [info ] [MainThread]:   query_tag: None
+[0m22:59:31.553316 [info ] [MainThread]:   client_session_keep_alive: False
+[0m22:59:31.553416 [info ] [MainThread]:   host: None
+[0m22:59:31.553508 [info ] [MainThread]:   port: None
+[0m22:59:31.553600 [info ] [MainThread]:   proxy_host: None
+[0m22:59:31.553693 [info ] [MainThread]:   proxy_port: None
+[0m22:59:31.553786 [info ] [MainThread]:   protocol: None
+[0m22:59:31.553879 [info ] [MainThread]:   connect_retries: 1
+[0m22:59:31.553969 [info ] [MainThread]:   connect_timeout: None
+[0m22:59:31.554062 [info ] [MainThread]:   retry_on_database_errors: False
+[0m22:59:31.554153 [info ] [MainThread]:   retry_all: False
+[0m22:59:31.554243 [info ] [MainThread]:   insecure_mode: False
+[0m22:59:31.554336 [info ] [MainThread]:   reuse_connections: True
+[0m22:59:31.554428 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m22:59:31.554520 [info ] [MainThread]:   workload_identity_provider: None
+[0m22:59:31.554613 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m22:59:31.554705 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m22:59:31.554987 [info ] [MainThread]: Registered adapter: snowflake=1.12.1
+[0m22:59:31.602635 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:59:31.603991 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:59:31.604140 [debug] [MainThread]: On debug: select 1 as id
+[0m22:59:31.604243 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:59:32.181156 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.577 seconds
+[0m22:59:32.183728 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:59:32.184557 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:59:32.190453 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.9685665, "process_in_blocks": "0", "process_kernel_time": 0.157952, "process_mem_max_rss": "181420032", "process_out_blocks": "0", "process_user_time": 0.855961}
+[0m22:59:32.191012 [debug] [MainThread]: Command `dbt debug` succeeded at 22:59:32.190905 after 0.97 seconds
+[0m22:59:32.191345 [debug] [MainThread]: Connection 'debug' was left open.
+[0m22:59:32.191804 [debug] [MainThread]: On debug: Close
+[0m22:59:32.386722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ee64c30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eeefe30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f908380>]}
+[0m22:59:32.387739 [debug] [MainThread]: Flushing usage events
+[0m22:59:33.421126 [debug] [MainThread]: An error was encountered while trying to flush usage events
