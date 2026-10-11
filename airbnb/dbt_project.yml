@@ -5,6 +5,9 @@
 name: 'airbnb'
 version: '1.0.0'
 
+dbt-cloud:
+    project-id: 595777
+
 # This setting configures which "profile" dbt uses for this project.
 profile: 'airbnb'
 
