@@ -188,3 +188,251 @@ Happy modeling!
 [0m22:59:32.386722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ee64c30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eeefe30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f908380>]}
 [0m22:59:32.387739 [debug] [MainThread]: Flushing usage events
 [0m22:59:33.421126 [debug] [MainThread]: An error was encountered while trying to flush usage events
+==================== 2026-10-12T09:43:39.077637Z | 01a12f7f-1143-7673-8799-55c5d7c4dac1 ====================
+==================== 2026-10-12T09:44:04.844290Z | 01a12f7f-75ea-7ff3-9dd2-f4c9fe4bb07c ====================
+09:44:04.844501 [info ]: dbt 2.0.8
+09:44:04.845073 [info ]: Started loading project
+09:44:04.849029 [info ]: Loading profiles.yml
+09:44:04.850722 [info ]: Finished loading project [  0.01s]
+09:44:04.850990 [info ]: Started debugging
+09:44:04.851096 [info ]: Debugging profile: dev
+09:44:04.851111 [info ]: Debugging dbt version: 2.0.8
+09:44:04.851148 [info ]: Debugging platform: macos aarch64 (unix)
+09:44:04.851187 [info ]: Debugging adapter type: snowflake (remote)
+09:44:04.866690 [info ]: Debugging dependencies:
+  git: OK
+09:44:04.866928 [info ]: Debugging connection:
+  "account": "JQKARHF-DU24978",
+  "user": "dbt",
+  "database": "AIRBNB",
+  "warehouse": "COMPUTE_WH",
+  "schema": "DEV",
+  "role": "TRANSFORM"
+09:44:04.867567 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.18
+09:44:05.678734 [debug]: borrow_tlocal_connection() took 811.410416ms
+09:44:05.682962 [debug]: create_debug_span(...).entered() took 241.542µs
+09:44:05.781369 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 98.187208ms
+09:44:05.781429 [debug]: reader.schema() took 583ns
+09:44:05.787067 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 104.061042ms
+09:44:05.787324 [debug]: concat_batches + normalize_result_column_names took 223.792µs
+09:44:05.787417 [debug]: record_current_span_status_from_attrs took 83.375µs
+09:44:05.787463 [debug]: Query executed on node unknown:
+select 1 as id
+09:44:05.787510 [debug]: drop(query_span_guard) (span exit/export) took 85.041µs
+09:44:05.787900 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 109.095667ms
+09:44:05.787984 [info ]: Debugging connection test: OK
+09:44:05.788321 [info ]: Debugged All checks passed!
+09:44:05.788379 [info ]: Finished debugging [  0.94s]
+09:44:06.322678 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' successfully for target 'dev' [1.5s]
+==================== 2026-10-12T09:44:16.365464Z | 01a12f7f-a2ec-73f3-8348-33792041ca82 ====================
+09:44:16.365555 [info ]: dbt 2.0.8
+09:44:16.365646 [info ]: Started loading project
+09:44:16.366191 [info ]: Loading profiles.yml
+09:44:16.477542 [debug]:    Started loading packages
+09:44:16.477862 [warn ]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key 'airbnb'. YAML path: 'models.airbnb'.
+  --> dbt_project.yml:35:10
+09:44:16.478227 [debug]:     Loaded [  0.00s] packages
+09:44:16.478666 [info ]: Finished loading project [  0.11s]
+09:44:16.478871 [info ]: Started parsing
+09:44:16.493045 [debug]: Finished parsing models/dim/dim_listings_cleansed.sql [  0.00s]
+09:44:16.493215 [debug]: Finished parsing models/src/src_hosts.sql [  0.00s]
+09:44:16.493358 [debug]: Finished parsing models/src/src_listings.sql [  0.00s]
+09:44:16.493466 [debug]: Finished parsing models/src/src_reviews.sql [  0.00s]
+09:44:16.544531 [info ]: Finished parsing [  0.07s]
+09:44:16.644053 [info ]: DOWNLOADING deferral manifest
+09:44:17.550021 [warn ]: [HttpError (dbt1203)]: Failed to download deferral manifest from the dbt platform for project 595777, continuing without deferral. 404 Not Found: No deferral environment defined for project with ID 595777 To target a specific environment, set `defer-env-id` in your dbt_project.yml under the `dbt-cloud` block.
+09:44:17.550460 [info ]: Started scheduling
+09:44:17.550892 [info ]: Finished scheduling [  0.00s]
+09:44:17.554346 [info ]: Started building task graph
+09:44:17.554683 [info ]: Finished building task graph [  0.00s]
+09:44:17.573016 [info ]: Started rendering (4 nodes)
+09:44:17.573107 [info ]: Started model DEV.src_reviews
+09:44:17.573138 [debug]: Started rendering model DEV.src_reviews
+09:44:17.573216 [info ]: Started model DEV.src_hosts
+09:44:17.573224 [debug]: Started rendering model DEV.src_hosts
+09:44:17.573239 [info ]: Started model DEV.dim_listings_cleansed
+09:44:17.573246 [debug]: Started rendering model DEV.dim_listings_cleansed
+09:44:17.573256 [info ]: Started model DEV.src_listings
+09:44:17.573262 [debug]: Started rendering model DEV.src_listings
+09:44:17.574954 [debug]: Compiled SQL for node model.dbt_cert.src_hosts at target/compiled/dbt_cert/models/src/src_hosts.sql
+09:44:17.575141 [debug]: Finished rendering [  0.00s] model DEV.src_hosts [success]
+09:44:17.575199 [info ]:  Succeeded model DEV.src_hosts (view) [2 of 4 in 0.00s]
+09:44:17.575518 [debug]: Compiled SQL for node model.dbt_cert.src_reviews at target/compiled/dbt_cert/models/src/src_reviews.sql
+09:44:17.575555 [debug]: Finished rendering [  0.00s] model DEV.src_reviews [success]
+09:44:17.575580 [info ]:  Succeeded model DEV.src_reviews (view) [1 of 4 in 0.00s]
+09:44:17.576009 [debug]: Compiled SQL for node model.dbt_cert.dim_listings_cleansed at target/compiled/dbt_cert/models/dim/dim_listings_cleansed.sql
+09:44:17.576043 [debug]: Finished rendering [  0.00s] model DEV.dim_listings_cleansed [success]
+09:44:17.576064 [info ]:  Succeeded model DEV.dim_listings_cleansed (view) [3 of 4 in 0.00s]
+09:44:17.576424 [debug]: Compiled SQL for node model.dbt_cert.src_listings at target/compiled/dbt_cert/models/src/src_listings.sql
+09:44:17.576457 [debug]: Finished rendering [  0.00s] model DEV.src_listings [success]
+09:44:17.576476 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+09:44:17.576491 [info ]:  Succeeded model DEV.src_listings (view) [4 of 4 in 0.00s]
+09:44:17.813997 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [1.4s]
+Processed: 4 models
+Summary: 4 total | 4 success
+==================== 2026-10-12T09:44:21.916763Z | 01a12f7f-b89b-7a13-b155-7f19737e874a ====================
+09:44:21.916869 [info ]: dbt 2.0.8
+09:44:21.916981 [info ]: Started loading project
+09:44:21.917637 [info ]: Loading profiles.yml
+09:44:22.035281 [debug]:    Started loading packages
+09:44:22.035612 [warn ]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key 'airbnb'. YAML path: 'models.airbnb'.
+  --> dbt_project.yml:35:10
+09:44:22.035970 [debug]:     Loaded [  0.00s] packages
+09:44:22.036400 [info ]: Finished loading project [  0.12s]
+09:44:22.036574 [info ]: Started parsing
+09:44:22.050550 [debug]: Finished parsing models/dim/dim_listings_cleansed.sql [  0.00s]
+09:44:22.050701 [debug]: Finished parsing models/src/src_hosts.sql [  0.00s]
+09:44:22.050809 [debug]: Finished parsing models/src/src_listings.sql [  0.00s]
+09:44:22.050911 [debug]: Finished parsing models/src/src_reviews.sql [  0.00s]
+09:44:22.103046 [info ]: Finished parsing [  0.07s]
+09:44:22.202996 [info ]: DOWNLOADING deferral manifest
+09:44:23.175071 [warn ]: [HttpError (dbt1203)]: Failed to download deferral manifest from the dbt platform for project 595777, continuing without deferral. 404 Not Found: No deferral environment defined for project with ID 595777 To target a specific environment, set `defer-env-id` in your dbt_project.yml under the `dbt-cloud` block.
+09:44:23.175429 [info ]: Started scheduling
+09:44:23.175731 [info ]: Finished scheduling [  0.00s]
+09:44:23.179865 [info ]: Started building task graph
+09:44:23.180109 [info ]: Finished building task graph [  0.00s]
+09:44:23.187554 [info ]: Started rendering (4 nodes)
+09:44:23.187633 [info ]: Started model DEV.src_reviews
+09:44:23.187650 [debug]: Started rendering model DEV.src_reviews
+09:44:23.187688 [info ]: Started model DEV.src_hosts
+09:44:23.187697 [debug]: Started rendering model DEV.src_hosts
+09:44:23.187712 [info ]: Started model DEV.dim_listings_cleansed
+09:44:23.187722 [debug]: Started rendering model DEV.dim_listings_cleansed
+09:44:23.187735 [info ]: Started model DEV.src_listings
+09:44:23.187742 [debug]: Started rendering model DEV.src_listings
+09:44:23.188767 [debug]: Compiled SQL for node model.dbt_cert.src_hosts at target/compiled/dbt_cert/models/src/src_hosts.sql
+09:44:23.188903 [debug]: Finished rendering [  0.00s] model DEV.src_hosts [success]
+09:44:23.189085 [info ]: Started analyzing (4 nodes)
+09:44:23.189135 [debug]: Started analyzing model DEV.src_hosts
+09:44:23.189390 [debug]: Compiled SQL for node model.dbt_cert.dim_listings_cleansed at target/compiled/dbt_cert/models/dim/dim_listings_cleansed.sql
+09:44:23.189469 [debug]: Finished rendering [  0.00s] model DEV.dim_listings_cleansed [success]
+09:44:23.189535 [debug]: Started analyzing model DEV.dim_listings_cleansed
+09:44:23.190150 [debug]: Compiled SQL for node model.dbt_cert.src_listings at target/compiled/dbt_cert/models/src/src_listings.sql
+09:44:23.190211 [debug]: Finished rendering [  0.00s] model DEV.src_listings [success]
+09:44:23.190256 [debug]: Started analyzing model DEV.src_listings
+09:44:23.190710 [debug]: Compiled SQL for node model.dbt_cert.src_reviews at target/compiled/dbt_cert/models/src/src_reviews.sql
+09:44:23.190755 [debug]: Finished rendering [  0.00s] model DEV.src_reviews [success]
+09:44:23.190783 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+09:44:23.190804 [debug]: Started analyzing model DEV.src_reviews
+09:44:23.199285 [debug]: Finished analyzing [  0.01s] model DEV.src_reviews [success]
+09:44:23.199329 [info ]:  Succeeded model DEV.src_reviews (view) [1 of 4 in 0.01s]
+09:44:23.199346 [debug]: Finished analyzing [  0.01s] model DEV.src_listings [success]
+09:44:23.199369 [info ]:  Succeeded model DEV.src_listings (view) [4 of 4 in 0.01s]
+09:44:23.199377 [debug]: Finished analyzing [  0.01s] model DEV.src_hosts [success]
+09:44:23.199393 [info ]:  Succeeded model DEV.src_hosts (view) [2 of 4 in 0.01s]
+09:44:23.204868 [debug]: Finished analyzing [  0.02s] model DEV.dim_listings_cleansed [success]
+09:44:23.204891 [info ]: Finished analyzing [  0.02s] (4 nodes, 0 skipped, 0 errors)
+09:44:23.204904 [info ]:  Succeeded model DEV.dim_listings_cleansed (view) [3 of 4 in 0.02s]
+09:44:23.375194 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [1.5s]
+Processed: 4 models
+Summary: 4 total | 4 success
+==================== 2026-10-12T09:44:29.797501Z | 01a12f7f-d764-7011-8e84-f663b82f8047 ====================
+09:44:29.797620 [info ]: dbt 2.0.8
+09:44:29.797742 [info ]: Started loading project
+09:44:29.798458 [info ]: Loading profiles.yml
+09:44:29.915964 [debug]:    Started loading packages
+09:44:29.916281 [warn ]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key 'airbnb'. YAML path: 'models.airbnb'.
+  --> dbt_project.yml:35:10
+09:44:29.916689 [debug]:     Loaded [  0.00s] packages
+09:44:29.917112 [info ]: Finished loading project [  0.12s]
+09:44:29.917298 [info ]: Started parsing
+09:44:29.931137 [debug]: Finished parsing models/dim/dim_listings_cleansed.sql [  0.00s]
+09:44:29.931320 [debug]: Finished parsing models/src/src_hosts.sql [  0.00s]
+09:44:29.931482 [debug]: Finished parsing models/src/src_listings.sql [  0.00s]
+09:44:29.931627 [debug]: Finished parsing models/src/src_reviews.sql [  0.00s]
+09:44:29.984098 [info ]: Finished parsing [  0.07s]
+09:44:30.081785 [info ]: DOWNLOADING deferral manifest
+09:44:30.959360 [warn ]: [HttpError (dbt1203)]: Failed to download deferral manifest from the dbt platform for project 595777, continuing without deferral. 404 Not Found: No deferral environment defined for project with ID 595777 To target a specific environment, set `defer-env-id` in your dbt_project.yml under the `dbt-cloud` block.
+09:44:30.959564 [info ]: Started scheduling
+09:44:30.959747 [info ]: Finished scheduling [  0.00s]
+09:44:30.961996 [info ]: Started building task graph
+09:44:30.962175 [info ]: Finished building task graph [  0.00s]
+09:44:30.970829 [info ]: Started rendering (4 nodes)
+09:44:30.970890 [info ]: Started model DEV.src_reviews
+09:44:30.970903 [debug]: Started rendering model DEV.src_reviews
+09:44:30.970935 [info ]: Started model DEV.src_hosts
+09:44:30.970944 [debug]: Started rendering model DEV.src_hosts
+09:44:30.970954 [info ]: Started model DEV.src_listings
+09:44:30.970960 [debug]: Started rendering model DEV.src_listings
+09:44:30.971859 [debug]: Compiled SQL for node model.dbt_cert.src_reviews at target/compiled/dbt_cert/models/src/src_reviews.sql
+09:44:30.971949 [debug]: Finished rendering [  0.00s] model DEV.src_reviews [success]
+09:44:30.972027 [info ]: Started analyzing (4 nodes)
+09:44:30.972064 [debug]: Started analyzing model DEV.src_reviews
+09:44:30.972425 [debug]: Compiled SQL for node model.dbt_cert.src_hosts at target/compiled/dbt_cert/models/src/src_hosts.sql
+09:44:30.972477 [debug]: Finished rendering [  0.00s] model DEV.src_hosts [success]
+09:44:30.972533 [debug]: Started analyzing model DEV.src_hosts
+09:44:30.972994 [debug]: Compiled SQL for node model.dbt_cert.src_listings at target/compiled/dbt_cert/models/src/src_listings.sql
+09:44:30.973046 [debug]: Finished rendering [  0.00s] model DEV.src_listings [success]
+09:44:30.973087 [debug]: Started analyzing model DEV.src_listings
+09:44:30.981742 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.18
+09:44:31.519242 [debug]: create_debug_span(...).entered() took 113µs
+09:44:31.681959 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 162.507ms
+09:44:31.682028 [debug]: reader.schema() took 625ns
+09:44:31.684179 [debug]: batch-consume loop (for res in reader) took 2.123458ms
+09:44:31.685477 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 166.172667ms
+09:44:31.685885 [debug]: concat_batches + normalize_result_column_names took 366.333µs
+09:44:31.685932 [debug]: record_current_span_status_from_attrs took 19.625µs
+09:44:31.685954 [debug]: Query executed on node model.dbt_cert.src_reviews:
+describe table AIRBNB.RAW.RAW_REVIEWS
+09:44:31.686008 [debug]: drop(query_span_guard) (span exit/export) took 63.583µs
+09:44:31.690254 [debug]: create_debug_span(...).entered() took 24.375µs
+09:44:31.690431 [debug]: Schema hydration: registering 1 schemas from db_runner
+09:44:31.690477 [debug]: Schema hydration: parsing FQN string '"AIRBNB"."RAW"."RAW_REVIEWS"'
+09:44:31.690640 [debug]: Schema hydration: registering cfqn=AIRBNB.RAW.RAW_REVIEWS (catalog='AIRBNB', schema='RAW', table='RAW_REVIEWS')
+09:44:31.690986 [debug]: Schema hydration: registration succeeded for AIRBNB.RAW.RAW_REVIEWS, exists_check=true
+09:44:31.723486 [debug]: Finished analyzing [  0.75s] model DEV.src_reviews [success]
+09:44:31.723536 [info ]:  Succeeded model DEV.src_reviews (view) [1 of 4 in 0.75s]
+09:44:31.877601 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 187.269833ms
+09:44:31.877715 [debug]: reader.schema() took 666ns
+09:44:31.879357 [debug]: batch-consume loop (for res in reader) took 1.578709ms
+09:44:31.880572 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 190.28875ms
+09:44:31.880685 [debug]: concat_batches + normalize_result_column_names took 76.333µs
+09:44:31.880708 [debug]: record_current_span_status_from_attrs took 6.917µs
+09:44:31.880724 [debug]: Query executed on node model.dbt_cert.src_hosts:
+describe table AIRBNB.RAW.RAW_HOSTS
+09:44:31.880810 [debug]: drop(query_span_guard) (span exit/export) took 91.75µs
+09:44:31.881152 [debug]: create_debug_span(...).entered() took 17.042µs
+09:44:31.881154 [debug]: Schema hydration: registering 1 schemas from db_runner
+09:44:31.881201 [debug]: Schema hydration: parsing FQN string '"AIRBNB"."RAW"."RAW_HOSTS"'
+09:44:31.881220 [debug]: Schema hydration: registering cfqn=AIRBNB.RAW.RAW_HOSTS (catalog='AIRBNB', schema='RAW', table='RAW_HOSTS')
+09:44:31.881274 [debug]: Schema hydration: registration succeeded for AIRBNB.RAW.RAW_HOSTS, exists_check=true
+09:44:31.882163 [debug]: Finished analyzing [  0.91s] model DEV.src_hosts [success]
+09:44:31.882307 [info ]:  Succeeded model DEV.src_hosts (view) [2 of 4 in 0.91s]
+09:44:31.996167 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 114.9275ms
+09:44:31.996241 [debug]: reader.schema() took 750ns
+09:44:31.997771 [debug]: batch-consume loop (for res in reader) took 1.506333ms
+09:44:31.998843 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 117.648917ms
+09:44:31.998974 [debug]: concat_batches + normalize_result_column_names took 95.708µs
+09:44:31.998996 [debug]: record_current_span_status_from_attrs took 6.792µs
+09:44:31.999011 [debug]: Query executed on node model.dbt_cert.src_listings:
+describe table AIRBNB.RAW.RAW_LISTINGS
+09:44:31.999049 [debug]: drop(query_span_guard) (span exit/export) took 43.25µs
+09:44:31.999548 [debug]: Schema hydration: registering 1 schemas from db_runner
+09:44:31.999579 [debug]: Schema hydration: parsing FQN string '"AIRBNB"."RAW"."RAW_LISTINGS"'
+09:44:31.999601 [debug]: Schema hydration: registering cfqn=AIRBNB.RAW.RAW_LISTINGS (catalog='AIRBNB', schema='RAW', table='RAW_LISTINGS')
+09:44:31.999688 [debug]: Schema hydration: registration succeeded for AIRBNB.RAW.RAW_LISTINGS, exists_check=true
+09:44:32.001156 [debug]: Finished analyzing [  1.03s] model DEV.src_listings [success]
+09:44:32.001300 [info ]:  Succeeded model DEV.src_listings (view) [3 of 4 in 1.03s]
+09:44:32.001359 [info ]: Started model DEV.dim_listings_cleansed
+09:44:32.001380 [debug]: Started rendering model DEV.dim_listings_cleansed
+09:44:32.003599 [debug]: Compiled SQL for node model.dbt_cert.dim_listings_cleansed at target/compiled/dbt_cert/models/dim/dim_listings_cleansed.sql
+09:44:32.003834 [debug]: Finished rendering [  0.00s] model DEV.dim_listings_cleansed [success]
+09:44:32.003895 [info ]: Finished rendering [  1.03s] (4 nodes, 0 skipped, 0 errors)
+09:44:32.004038 [debug]: Started analyzing model DEV.dim_listings_cleansed
+09:44:32.019987 [debug]: Finished analyzing [  0.02s] model DEV.dim_listings_cleansed [success]
+09:44:32.020030 [info ]: Finished analyzing [  1.05s] (4 nodes, 0 skipped, 0 errors)
+09:44:32.020069 [info ]:  Succeeded model DEV.dim_listings_cleansed (view) [4 of 4 in 0.02s]
+09:44:32.196164 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 2 warnings for target 'dev' [2.4s]
+Processed: 4 models
+Summary: 4 total | 4 success
+09:44:32.401062 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully [53.3s]
