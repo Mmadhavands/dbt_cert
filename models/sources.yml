@@ -17,10 +17,5 @@ sources:
               count: 1
               period: hour
             error_after: 
-              count: 24
-              period: hour
-              count:
-              period:
-            
-              period:
-            
+              count: 365
+              period: day
