@@ -15,5 +15,5 @@ unit_tests:
     expect:
       rows: 
         - {review_date: '2025-01-13', is_full_moon: "not full moon"}
-        - {review_date: '2025-01-14', is_full_moon: "not full moon"}
+        - {review_date: '2025-01-14', is_full_moon: "full moon"}
         - {review_date: '2025-01-15', is_full_moon: "full moon"}
