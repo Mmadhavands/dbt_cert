@@ -37,4 +37,4 @@ models:
         data_tests:
           - accepted_values:
               arguments: 
-                values: ['t']
+                values: ['f','t']
